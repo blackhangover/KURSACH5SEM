@@ -1,0 +1,131 @@
+body{
+    background-color: #272b2f;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+div{
+    position: center;
+}
+
+h1{
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    color: azure;
+}
+
+.info{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 38px;
+    margin-top: 5%;
+}
+
+input{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+input[type="text"]{
+    background: azure;
+    width: 79%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+
+input[type="submit"]{
+    position: relative;
+    border-radius: 0 25px 25px 0;
+    height: 50px;
+    width: 20%;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: chocolate;
+}
+
+#name{
+    color: azure;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 54px;
+}
+
+.type{
+    border-radius: 10px;
+    border: 2px solid chocolate;
+    margin: 20px 30% 0 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+i{
+    color: azure;
+    padding: 0 20px 10px 20px;
+}
+
+.type i{
+    cursor: pointer;
+    padding: 20px;
+    color: azure;
+    border-radius: 40px;
+    background-color: chocolate;
+    font-size: 40px;
+    transition: 1s;
+}
+
+.type i:hover{
+    border-radius: 40px;
+    font-size: 40px;
+    color: #272b2f;
+    background-color: chocolate;
+}
+
+.search{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    width: 60%;
+}
+
+input[type="checkbox"]{
+    visibility: hidden;
+}
+
+.item{
+    margin-top: 1em;
+    border-radius: 10px;
+    border: 2px solid chocolate;
+    color: azure;
+    display: flex;
+    flex-direction: row;
+}
+
+.description{
+    margin-left: 2em;
+    padding: 0 10px 0 0;
+    font-size: 24px;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+}
+
+.best{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.shop{
+    margin-right: 0;
+    margin-left: auto;
+}

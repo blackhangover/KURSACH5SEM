@@ -1,0 +1,58 @@
+{% extends "index.html" %}
+{% block body %}
+
+<div class="best">
+<div>
+   <p style="font-size: 35px;color: azure">Самый доступный вариант:</p>
+   <div class="item" style="border-color: azure">
+         <div style="padding: 2em 0 0 2em"><img src="{{ min[2] }}"></div>
+         <div class="description">
+            <p>{{ min[0] }}</p>
+            <p class="price">{{ min[1] }}</p>
+            <a href="{{ min[3] }}" style="color: chocolate; text-decoration-line: none">Перейти на страницу товара</a>
+         </div>
+         {% if min[4] == "mobicom" %}
+         <div class="shop"><img style= "width: 200px; height: 70px; margin-right: 1em" src="https://www.hotdeals.com/public/images/610d25783ab17.png" alt="mobicom"></div>
+         {% else %}
+         <div class="shop"><img style= "width: 250px; margin-right: 1em" src="https://cdn.kns.ru/i/logo-kns.png" alt="kns"></div>
+         {% endif %}
+   </div>
+
+</div>
+
+<div>
+   <p style="font-size: 35px;color: azure">Самый дорогой вариант:</p>
+   <div class="item" style="border-color: azure">
+         <div style="padding: 2em 0 0 2em"><img src="{{ max[2] }}"></div>
+         <div class="description">
+            <p>{{ max[0] }}</p>
+            <p class="price">{{ max[1] }}</p>
+            <a href="{{ max[3] }}" style="color: chocolate; text-decoration-line: none">Перейти на страницу товара</a>
+         </div>
+         {% if max[4] == "mobicom" %}
+         <div class="shop"><img style= "width: 200px; height: 70px; margin-right: 1em" src="https://www.hotdeals.com/public/images/610d25783ab17.png" alt="mobicom"></div>
+         {% else %}
+         <div class="shop"><img style= "width: 250px; margin-right: 1em" src="https://cdn.kns.ru/i/logo-kns.png" alt="kns"></div>
+         {% endif %}
+   </div>
+
+</div>
+</div>
+
+<p style="text-align: center; color: azure;font-size: 35px">Все варианты:</p>
+{% for data in datas %}
+   <div class="item">
+      <div style="padding: 2em 0 0 2em"><img src="{{ data[2] }}"></div>
+      <div class="description">
+         <p>{{ data[0] }}</p>
+         <p class="price">{{ data[1] }}</p>
+         <a href="{{ data[3] }}" style="color: chocolate; text-decoration-line: none">Перейти на страницу товара</a>
+      </div>
+      {% if data[4] == "mobicom" %}
+      <div class="shop"><img style= "width: 200px; height: 70px; margin-right: 1em" src="https://www.hotdeals.com/public/images/610d25783ab17.png" alt="mobicom"></div>
+      {% else %}
+      <div class="shop"><img style= "width: 250px; margin-right: 1em" src="https://cdn.kns.ru/i/logo-kns.png" alt="kns"></div>
+      {% endif %}
+   </div>
+{% endfor %}
+{% endblock %}
